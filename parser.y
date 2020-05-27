@@ -1,3 +1,4 @@
+/* aun faltan unos pocos cambios */
 %{
 #include <stdio.h>
 #include <stdlib.h>
