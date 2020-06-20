@@ -2,7 +2,7 @@
   #include <stdio.h>
   #include <string.h>
   #include <stdlib.h>
-  #include "yacc.tab.h"
+  #include "parser.tab.h"
 %}
 
 %option noyywrap
