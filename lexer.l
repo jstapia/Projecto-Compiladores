@@ -2,8 +2,7 @@
   #include <stdio.h>
   #include <string.h>
   #include <stdlib.h>
-  #include "y,tab.h"
-
+  #include "yacc.tab.h"
 %}
 
 %option noyywrap
