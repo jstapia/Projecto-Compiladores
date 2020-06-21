@@ -15,3 +15,4 @@ int main(int argc, char *argv[]){
     printTablaTipos(getCimaType(ptt));
     return 0;
 }
+
