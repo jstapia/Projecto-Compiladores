@@ -1,4 +1,4 @@
-#include <stdio.h>
+##include <stdio.h>
 #include <stdlib.h>
 #include "cuadruplas.h"
 
@@ -16,7 +16,7 @@ quad* init_quad(char *op , char *arg1, char *arg2, char *res){
 //elimina_quad
 void finish_quad(quad *q){
 	while(q != NULL){
-		elimina_quad(q->next);
+		finish_quad(q->next);
 	}
 	free(q);
 }
@@ -42,14 +42,14 @@ void finish_code(code *c){
 // void append_quad(CODE* c, QUAD *cd)
 void append_quad(code* c  Quad *cd)
 {
-  if (c->num_instru == 0) {
+  if (c->num_instrucciones == 0) {
 	c->tail = cd;
 	c->head = cd;
   }else{
 	c->tail->next = cd;
 	c->tail  = cd;
   }
-  c->num_instru++;
+  c->num_instrucciones++;
 }
 
 //void agregar_cuadrupla(code* c, char *op, char* arg1, char *arg2, char* res){
@@ -70,4 +70,3 @@ void append_new_quad(code* c, char *op, char* arg1, char *arg2, char* res){
 }
 
 //QUAD *search_quad_index(CODE *c,char *i){
-
