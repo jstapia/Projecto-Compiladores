@@ -4,9 +4,9 @@
 #include "backpatch.h"
 
 //create_list
-label *init_list_index(int l){
+LINDEX *init_list_index(INDEX l){
 	
-	label *list = malloc(sizeof(label));
+	LINDEX *list = malloc(sizeof(LINDEX));
 	list->items = malloc(sizeof(int) * 100);
 	list->i = 0;
 	list->items[list->i] = l;
@@ -16,8 +16,8 @@ label *init_list_index(int l){
 
 /* Funcion encargadad de copiar las listas de ambas etiquetas. */
 //merge
-label *combinar (label *l1, label *l2){
-	label *l = malloc(sizeof(label));
+LINDEX *combinar (labLINDEXel *l1, LINDEX *l2){
+	LINDEX *l = malloc(sizeof(LINDEX));
 	l = l1;
 	for(int i = 0; i < l2->i; i++){
 		l->items[l->i] = l2->items[i];
@@ -29,7 +29,7 @@ label *combinar (label *l1, label *l2){
 
 
 /* Funcion encargada de cambiar la localizacion donde se almacenara el resultado. */
-void backpatch(label *l, label *l2){
+void backpatch(LINDEX *l, LINDEX *l2){
 	char res[100];
 	int inst;
 	if(l2){
