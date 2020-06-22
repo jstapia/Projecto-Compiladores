@@ -3,12 +3,13 @@
 	#include <stdio.h>
 	#include <string.h>
 	#include <stdlib.h>
-	#include "attribs.h"
+	#include "tipos.h"
 	#include "pilaTablaSimbol.h"
 	#include "pilaTablaTipo.h"
 	#include "tablaSimbol.h"
 	#include "tablaTipo.h"
-	#include "intermediate_code.h"
+	#include "cuadruplas.h"
+	#include "backpatch"
 
 	extern int yylex();
 	extern int yyparse();
