@@ -4,7 +4,7 @@
 #include "backpatch.h"
 
 //create_list
-LINDEX *init_list_index(INDEX l){
+LINDEX *init_list_index(LINDEX l){
 	
 	LINDEX *list = malloc(sizeof(LINDEX));
 	list->items = malloc(sizeof(int) * 100);
